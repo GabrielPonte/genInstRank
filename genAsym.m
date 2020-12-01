@@ -14,7 +14,7 @@ function A = genAsym(m,r,dens)
     
     rc=M*rho.^(1:r);
     rc=rc.*(2*randi(2,1,length(rc))-3);
-    rc=[rc,zeros(1,n-r)];
+    rc=[rc,zeros(1,m-r)];
 
     A=sprandsym(m,dens,rc);
     
